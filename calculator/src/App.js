@@ -1,10 +1,11 @@
 
 import './App.css';
-
+import * as React from "react";
+import Header from './components/Header';
 function App() {
   return (
-    <div >
-      Calculator
+    <div>
+      <Header></Header>
     </div>
   );
 }
