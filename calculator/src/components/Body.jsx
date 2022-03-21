@@ -1,15 +1,22 @@
 import * as React from "react";
 import Buttons from "./Buttons";
-import Input from "./Input";
- 
+import TextField from '@mui/material/TextField';
+import Box from "@mui/material/Box";
+
 export default function Body() {
   return (
-    <div className="wrapper">
-        <h1>Calculator</h1>
-        <div className="comps">
-            <Input></Input>
-            <Buttons></Buttons>
-        </div>
-    </div>
+    <Box  sx={{
+      m: 'auto',
+      width:'30%',
+      backgroundColor: 'primary.dark',
+
+     
+  
+    }}>
+      <Box sx ={{m:'auto',width:'50%'}}>
+      <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+      <Buttons></Buttons>
+      </Box>
+    </Box>
   );
 }
