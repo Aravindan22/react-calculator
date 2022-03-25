@@ -1,43 +1,45 @@
 import React from "react";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 
 export default function Buttons() {
-    return(
-        <div className="buttons">
-             <div className="button-row">
-                <button>log</button>
-                <button>ln</button>
-                <button>CLR</button>
-            </div>
-            <div className="button-row">
-                <button>()</button>
-                <button>√</button>
-                <button>^</button>
-                <button>/</button>
-            </div>
-            <div className="button-row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>*</button>
-            </div>
-            <div className="button-row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-            </div>
-            <div className="button-row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-            </div>
-            <div className="button-row">
-                <button>.</button>
-                <button>0</button>
-                <button>x</button>
-                <button>=</button>
-            </div>
-        </div>
-    )
+  return (
+    <Stack spacing={2}>
+      <Stack direction="row" spacing={2}>
+        <Button>log</Button>
+        <Button>ln</Button>
+        <Button>CLR</Button>
+      </Stack>
+      <Stack direction="row" spacing={2}>
+        <Button>()</Button>
+        <Button>√</Button>
+        <Button>^</Button>
+        <Button>/</Button>
+      </Stack>
+      <Stack direction="row" spacing={2}>
+        <Button>7</Button>
+        <Button>8</Button>
+        <Button>9</Button>
+        <Button>*</Button>
+      </Stack>
+      <Stack direction="row" spacing={2}>
+        <Button>4</Button>
+        <Button>5</Button>
+        <Button>6</Button>
+        <Button>-</Button>
+      </Stack>
+      <Stack direction="row" spacing={2}>
+        <Button>1</Button>
+        <Button>2</Button>
+        <Button>3</Button>
+        <Button>+</Button>
+      </Stack>
+      <Stack direction="row" spacing={2}>
+        <Button>.</Button>
+        <Button>0</Button>
+        <Button>x</Button>
+        <Button>=</Button>
+      </Stack>
+    </Stack>
+  );
 }
