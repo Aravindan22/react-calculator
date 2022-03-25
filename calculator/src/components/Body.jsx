@@ -1,21 +1,25 @@
 import * as React from "react";
 import Buttons from "./Buttons";
-import TextField from '@mui/material/TextField';
+import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 
 export default function Body() {
   return (
-    <Box  sx={{
-      m: 'auto',
-      width:'30%',
-      backgroundColor: 'primary.dark',
-
-     
-  
-    }}>
-      <Box sx ={{m:'auto',width:'50%'}}>
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-      <Buttons></Buttons>
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      sx={{
+        mt:6,
+        // backgroundColor: "primary.da`rk",
+      }}
+    >
+      <Box>
+        <Stack spacing={2}>
+          <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+          <Buttons></Buttons>
+        </Stack>
       </Box>
     </Box>
   );
